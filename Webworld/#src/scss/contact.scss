@@ -1,0 +1,248 @@
+.contact-block {
+	padding: 70px 0px 100px 0px;
+	@media (max-width:$md2+px){
+		padding: 50px 0px 80px 0px;
+	}
+	@media (max-width:$md3+px){
+		padding: 50px 0px 50px 0px;	
+	}
+	@media (max-width:$md4+px){
+		padding: 30px 0px 30px 0px;
+	}	
+	&__body {
+		border-top: 1px solid #e1e1e1;
+		@include flexbox();
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__text-block {}
+	&__icon {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		margin: -15px auto;
+		max-width: 60px;
+		background-color: #fff;	
+		i{
+			font-size: 25px;
+			color: #71b6d5;
+		}
+	}
+	&__title {}
+	&__row {
+		@include flexbox();
+		justify-content: space-between;
+		align-items: center;
+		margin: 50px 0px 0px 0px;
+
+		@media (max-width:$md3+px){
+			@include flexbox();
+			flex-wrap: wrap;
+			margin: 20px 0px 0px 0px;
+		}
+	}
+	&__column {
+		@media (max-width:$md3+px){
+			flex: 0 1 50%;	
+			margin: 20px 0px 0px 0px;
+		}
+		@media (max-width:$md4+px){
+				flex: 0 1 100%;
+			}	
+	}
+}
+.column-contact-block {
+	@include flexbox();
+	flex-direction: column;
+	&__icon {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+		background-color: #71b6d5;
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;	
+		margin: 0 auto;
+		i{
+			font-size: 34px;			
+			color: #fff; 
+			padding: 10px 10px;
+			border-radius: 50%;	
+		}		
+	}
+	&__title {
+		margin: 25px 0px 0px 0px;
+		text-align: center;
+		color: #484848;
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 18px;
+	}
+	&__text {
+		margin: 25px 0px 0px 0px;
+		text-align: center;
+		p{
+			color: #7c7770;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 20px;	
+		}
+
+	}
+}
+
+//================================================================================================
+
+.contact-form {
+	padding: 50px 0px 100px 0px;
+	@media (max-width:$md2+px){
+		padding: 50px 0px 80px 0px;
+	}
+	@media (max-width:$md3+px){
+		padding: 30px 0px 50px 0px;	
+	}
+	@media (max-width:$md4+px){
+		padding: 20px 0px 30px 0px;
+	}	
+	&__body {
+		border-top: 1px solid #e1e1e1;
+		@include flexbox();
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__text-block {}
+	&__icon {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		margin: -15px auto;
+		max-width: 60px;
+		background-color: #fff;	
+		i{
+			font-size: 25px;
+			color: #71b6d5;
+		}
+	}
+	&__title {}
+	&__form {
+		margin: 60px 0px 0px 0px;
+
+		@media (max-width:$md3+px){
+			margin: 15px 0px 0px 0px;
+		}
+	}
+}
+.form-contact-form {
+	@include flexbox();
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__row{
+		@include flexbox();
+		justify-content: center;
+		margin: 0px -10px;
+
+		@media (max-width:$md3+px){
+			@include flexbox();
+			flex-direction: column;
+		}
+	}
+	&__column{
+		padding: 0px 10px;
+
+		@media (max-width:$md3+px){
+			margin: 15px 0px 0px 0px;
+		}
+	}
+	&__name {
+		input:invalid:not(:placeholder-shown) {border-color: red;}
+		input:valid:not(:placeholder-shown) {border-color: green;}
+	}
+	&__email {
+		input:invalid:not(:placeholder-shown) {border-color: red;}
+		input:valid:not(:placeholder-shown) {border-color: green;}
+	}
+	&__textarea {
+		margin: 15px 0px 0px 0px;
+		textarea{
+			width: 526px;
+			height: 240px;
+			border: 1px solid #e2e2e2;
+			background-color: #f5f5f5;
+			border-radius: 5px;
+			padding: 30px 0px 0px 20px;
+
+			@media (max-width:$md3+px){
+				width: 500px;
+			}
+			@media (max-width:$md4+px){
+				width: 300px;
+			}
+
+		}
+	}
+	&__btn {}
+}
+.input{
+	width: 254px;
+	height: 40px;
+	border: 1px solid #e2e2e2;
+	background-color: #f5f5f5;
+	padding: 0px 0px 0px 20px;
+	border-radius: 5px;	
+
+	@media (max-width:$md3+px){
+		width: 500px;
+	}
+	@media (max-width:$md4+px){
+		width: 300px;
+	}
+}
+.btn-form-contact-form {
+	margin: 5px 0px 0px 0px;
+	cursor: pointer;
+	&__text {
+		display: inline-block;
+		width: 526px;
+		padding: 12px 0px;	
+		color: #ffffff;
+		font-size: 18px;
+		font-weight: 600;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #71b6d5;
+		border-radius: 5px;
+		position: relative;
+		&:after{
+			content: '';
+			width: 0;
+			position: absolute;
+			@include anim(0.3s,0s);
+			height: 100%;
+			left: 50%;
+			top: 0;
+			background-color: #558ba3; 
+		}
+		span{
+			position: relative;
+			z-index: 2;
+		}
+		&:hover{
+			&:after{
+				left: 0;
+				width: 100%;
+				border-radius: 5px;
+			}
+					
+		}
+
+		@media (max-width:$md3+px){
+			width: 500px;
+		}
+		@media (max-width:$md4+px){
+			width: 300px;
+		}
+	}
+}
