@@ -1,0 +1,98 @@
+.header {
+	margin: 50px 0px 0px 0px;
+
+	@media (max-width:$md2+px){
+		margin: 30px 0px 0px 0px;
+	}
+	&__body {
+		@include flexbox();
+		justify-content: space-between;
+
+	}
+	&__logo {
+		@media (max-width:$md2+px){
+			img{
+				width: 160px;
+				height: 36px;	
+			}			
+		}
+	}
+	&__item {
+		@include flexbox();
+
+		@media (max-width:$md4+px){
+			display: none;
+		}
+	}
+	&__btn {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		border: 1px solid #000000;
+		border-radius: 10px;
+		text-align: center;
+		margin: 0px 0px 0px 25px;
+		cursor: pointer;
+		@include anim(0.3s,0s);
+
+		&:hover{
+			background-color: #000;
+			.header__icon {
+				i{
+					color: #fff;
+				}
+			}
+			.header__btn-text {
+				color: #fff;
+			}		
+		}
+
+		@media (max-width:$md3+px){
+			width: 130px;
+		}	
+	}
+	&__icon {
+		margin: 0px 15px 0px 0px;
+		i{
+			font-size: 25px;
+			font-weight: bold;
+
+			@media (max-width:$md3+px){
+				font-size: 18px;
+			}		
+		}	
+	}
+	&__btn-text {
+		font-size: 18px;
+		line-height: 19px;
+		font-weight: bold;
+
+		@media (max-width:$md3+px){
+			font-size: 14px;
+		}
+	}
+	&__item-mobile {}
+}
+.item-mobile-header {
+	display: none;
+
+	@media (max-width:$md4+px){
+		@include flexbox();
+	}
+	&__body {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
+	}
+	&__icon {
+		i{
+			font-size: 30px;
+			font-weight: regular;
+			margin: 0px 0px 0px 20px;
+		}
+	}
+}
+
+
+

@@ -1,0 +1,86 @@
+.footer {
+	margin: 50px 0px 0px 0px;
+	padding: 40px 0px;	
+	background: #004688;
+
+	@media (max-width:$md3+px){
+		padding: 60px 0px;	
+	}
+	&__body {
+		@include flexbox();
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width:$md3+px){
+			flex-direction: column;
+			text-align: center;
+		}
+	}
+	&__column {}
+	&__logo-block {
+		position: relative;
+	}
+	&__logo {}
+	&__logo-copyright {
+		margin: 20px 0px 0px 0px;
+		font-family: 'Open Sans';
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 19px;
+		color: #E0DDDD;		
+
+		@media (max-width:$md3+px){
+			display: none;
+		}
+	}
+	&__link {
+		@media (max-width:$md3+px){
+			margin: 15px 0px 0px 0px;
+			&:nth-child(2){
+				margin: 35px 0px 0px 0px;
+			}
+		}		
+		p{
+			margin: 10px 0px 0px 0px;	
+			&:first-child{
+				margin: 0px 0px 0px 0px;
+			}
+
+			@media (max-width:$md3+px){
+				margin: 15px 0px 0px 0px;
+			}	
+		}
+		a {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 25px;
+			color: #FFFFFF;
+		}
+	}
+	&__pay {
+		@media (max-width:$md3+px){
+			@include flexbox();
+			margin: 30px 0px 0px 0px;
+		}
+	}
+	&__img-pay {
+		a{
+			display: block;
+			text-align: right;
+		}
+	}
+	&__copyright {
+		display: none;
+
+		@media (max-width:$md3+px){
+			display: block;
+			margin: 30px 0px 0px 0px;
+			font-family: 'Open Sans';
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 19px;
+			color: #E0DDDD;	
+		}
+	}
+}
+
