@@ -546,10 +546,8 @@ body.lock{
 			padding: 50px 0;
 		}
 	}
-	&__body {
-	}
-	&__title {
-	}
+	&__body {}
+	&__title {}
 	&__text {}
 	&__row {
 		display: flex;
@@ -583,11 +581,7 @@ body.lock{
 
 		@media (max-width: 1140px){
 			padding: 30px 20px;
-		}
-
-		@media (max-width: 982px){
-			padding: -10px;
-		}
+		}	
 	}
 	&__column-icon {
 		img{
@@ -1440,7 +1434,8 @@ body.lock{
 // ===================================================================
 
 .form {
-	background-color: #cccccc;
+	background: url('../img/get in touch/bg.jpg') 0-0 no-repeat;
+	background-size: cover;
 	padding: 140px 0px;
 
 	@media (max-width: 767.99px){
@@ -1551,28 +1546,26 @@ body.lock{
 // ===================================================================
 
 .footer {
-	background-color: #cccccc;
-	padding: 0px 0px 140px 0px;	
+	background-color: #fff;
+	padding: 140px 0px 140px 0px;	
 
 	@media (max-width: 1182px){
-		padding: 0px 20px 140px 20px;	
+		padding: 140px 20px 140px 20px;	
 	}
 
 	@media (max-width: 767.99px){
-		padding: 0px 20px 80px 20px;	
+		padding: 80px 20px 80px 20px;	
 	}
 
 	@media (max-width: 424.99px){
 		padding: 0px 0px 0px 0px;	
 	}
 	&__row {
-		//border: 1px solid red;
 		display: flex;
 		justify-content: space-between;
 		background-color: rgba(38, 39, 50, 0.85);
 
-		@media (max-width: 424.99px){
-			display: flex;
+		@media (max-width: 767.99px){
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
@@ -1580,13 +1573,7 @@ body.lock{
 		
 	}
 	&__column {
-
-		@media (max-width: 610px){
-			display: flex;
-			flex-direction: column;
-		}
 		padding: 60px;
-		//border: 1px solid red;	
 
 		@media (max-width: 1023.99px){
 			padding: 30px;
@@ -1603,10 +1590,9 @@ body.lock{
 			&:nth-child(3){
 				flex: 1 1 auto;
 			}
-
 		}
 
-		@media (max-width: 424.99px){
+		@media (max-width: 767.99px){
 			border: none;
 		}
 	}
@@ -1615,7 +1601,7 @@ body.lock{
 	display: flex;
 	&__logo {}
 	&__body {
-		@media (max-width: 424.99px){
+		@media (max-width: 767.99px){
 			text-align: center;
 		}
 	}
@@ -1628,7 +1614,6 @@ body.lock{
 		line-height: 27px;
 	}
 	&__text {
-		//border: 1px solid red;
 		max-width: 200px;
 		font-weight: 400;
 		font-size: 16px;
